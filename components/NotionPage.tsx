@@ -278,7 +278,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
         }
       />
 
-      <GitHubShareButton />
+      {config.githubShareButton && (
+        <GitHubShareButton link={config.githubShareButton} />
+      )}
 
       <CustomHtml site={site} />
     </Twitter.Provider>

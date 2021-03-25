@@ -86,6 +86,12 @@ export const isPreviewImageSupportEnabled: boolean = getSiteConfig(
   false
 )
 
+// github share button link
+export const githubShareButton: string | null = getSiteConfig(
+  'githubShareButton',
+  null
+)
+
 export const isDev =
   process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
 
@@ -192,10 +198,10 @@ function cleanPageUrlMap(
 }
 
 function invertPageUrlOverrides(
-  pageUrlOverrides: PageUrlOverridesMap
+  pageUrlOverridesData: PageUrlOverridesMap
 ): PageUrlOverridesInverseMap {
-  return Object.keys(pageUrlOverrides).reduce((acc, uri) => {
-    const pageId = pageUrlOverrides[uri]
+  return Object.keys(pageUrlOverridesData).reduce((acc, uri) => {
+    const pageId = pageUrlOverridesData[uri]
 
     return {
       ...acc,

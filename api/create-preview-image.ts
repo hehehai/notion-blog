@@ -78,9 +78,9 @@ export async function createPreviewImage(
 
       await doc.create(error)
       return error
-    } catch (err) {
+    } catch (e) {
       // ignore errors
-      console.error(err)
+      console.error(e)
     }
   }
 }

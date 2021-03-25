@@ -1,25 +1,24 @@
 module.exports = {
   // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: 'dc5926c497874fff97c398746403c8d6',
+  rootNotionPageId: 'd4f80e48851b4770a4f913d7bd462779',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'hehehai blog',
+  name: '河河海的开发笔记',
   domain: 'hehehai.cn',
-  author: 'hehehai',
+  author: '河河海',
 
   // open graph metadata (optional)
-  description: 'Example site description',
-  socialImageTitle: 'Transitive Bullshit',
-  socialImageSubtitle: 'Hello World! 👋',
+  description: '一名全栈程序员的开发笔记',
+  socialImageTitle: '河河海',
+  socialImageSubtitle: '你好啊 👋',
 
   // social usernames (optional)
   twitter: 'hehehai',
   github: 'hehehai',
-  linkedin: 'fisch2',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -47,5 +46,9 @@ module.exports = {
   //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
-  pageUrlOverrides: null
+  pageUrlOverrides: null,
+
+  // show github share button
+  // set github link
+  githubShareButton: null
 }

@@ -17,7 +17,7 @@ module.exports = {
   socialImageSubtitle: '你好啊 👋',
 
   // social usernames (optional)
-  twitter: 'hehehai',
+  twitter: 'riverhohai',
   github: 'hehehai',
 
   // default notion icon and cover images for site-wide consistency (optional)

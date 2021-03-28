@@ -71,6 +71,7 @@
 .notion-collection-card {
   border-radius: 16px;
   box-shadow: none;
+  background-color: #fbfbfb;
 }
 
 .notion-collection-card-cover img {
@@ -81,10 +82,14 @@
   overflow: visible;
 }
 
+.notion-collection-card-body {
+  padding: 10px 10px 6px;
+}
+
 .notion-collection-card-cover {
   border-radius: 16px;
   overflow: visible;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  box-shadow: 0 1px 4px rgba(15, 15, 15, 0.1);
 }
 
 .notion-collection-card-cover {
@@ -95,6 +100,10 @@
 
 .notion-collection-card:hover .notion-collection-card-cover {
   filter: brightness(120%);
+}
+
+.notion-page-link {
+  border-radius: 3px;
 }
 
 /* only target safari */

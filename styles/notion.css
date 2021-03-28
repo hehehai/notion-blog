@@ -355,3 +355,14 @@
   border-radius: 2px;
   padding: 6px 4px;
 }
+
+.notion-property-checkbox-unchecked,
+.notion-property-checkbox-checked {
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.notion-property-checkbox-checked svg {
+  width: 12px;
+  height: 12px;
+}

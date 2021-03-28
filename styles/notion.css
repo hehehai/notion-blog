@@ -8,14 +8,17 @@
  */
 
 .notion {
-  --notion-max-width: 720px;
+  --notion-max-width: 760px;
   --notion-header-height: 54px;
 
   --select-color-0: #573aff;
+  --bg-color-0: rgba(135, 131, 120, 0.1);
 }
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
+  padding-left: 0;
+  padding-right: 0;
   line-height: 1.65;
 }
 
@@ -218,8 +221,8 @@
 .notion-orange_background,
 .notion-brown_background,
 .notion-gray_background {
-  padding: 0 0.5rem;
-  margin: 0 -0.5rem 0 -0.25rem;
+  padding: 0 0.5rem 0 0.3rem;
+  margin: 0 1px;
   border-radius: 0.5rem;
   border-bottom-left-radius: 0.125rem;
   box-decoration-break: clone;
@@ -333,4 +336,13 @@
 .notion-bookmark:hover {
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
   border-image-slice: 1;
+}
+
+.notion-aside-table-of-contents-header {
+  width: 100%;
+}
+
+.notion-table-of-contents-item {
+  border-radius: 2px;
+  padding: 6px 4px;
 }
